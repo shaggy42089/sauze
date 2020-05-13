@@ -1,0 +1,14 @@
+<form method="post" action="inscription.php">
+	<fieldset>
+	<legend>Inscription</legend>
+		
+		<input type="text" name="name" id="name" placeholder="Nom" required>
+		<input type="email" name="email" id="email" placeholder="Email" required />
+		<input type="password" name="password" id="password" placeholder="Mot de Passe" required />
+		<input type="password" name="confirm" id="confirm" placeholder="Confirmer" required>
+		<div>
+			<input type="radio" id="enfant" name="cat" value="je suis un enfant de Papi" checked>
+			<input class="child" type="radio" id="petit" name="cat" value="je suis un autre membre de la famille">
+			<input class="child" type="radio" id="demandeur" name="cat" value="je suis un ami de la famille">
+		</div>
+		<div class="childHidden">

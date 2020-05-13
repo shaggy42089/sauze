@@ -1,0 +1,401 @@
+#calendar-container {
+	background-color: #3498db;
+	display: inline-block;
+	flex-direction: column;
+	padding: 2vw;
+	margin: 1vw;
+	border-radius: 20%;
+	text-align: center;
+	box-shadow: 3px 3px 3px;
+}
+
+#calendar-container *{
+	text-align: center;
+	padding: 3px;
+	vertical-align: middle;
+}
+
+#calendar tr td {
+	border-radius: 25%;
+	margin: 3%;
+}
+
+#calendar tr td:not(.empty):hover {
+	opacity: 0.7;
+	background-color:#82ccdd;
+}
+
+#month-bar {
+	display: flex;
+	font-size: 3vw;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#month-bar a {
+	font-weight: bold;
+}
+
+fieldset {
+    border:2px solid #27ae60;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+	
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
+    box-shadow: 2px 0px 2px;
+    background-color:#67809f;
+}
+
+input {
+	margin-bottom: 3%;
+	font-size: 4vw;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+p a {
+	color: #4d13d1;
+}
+
+fieldset p {
+	font-size: 2vw;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.l-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+strong.warning, strong.good {
+	padding: 4%;
+	border-radius: 25px;
+	display: inline;
+	font-size: 2vw;
+	box-shadow: 2px 0px 2px;
+	margin: 1vw;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+}
+
+* {
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);}
+#title {
+	font-size: 300%;}
+.booked	{
+	background-color: #e74c3c;}
+.mine.booked {
+	background-color: #2ecc71;}
+a {
+	text-decoration: none;
+	color: black;}
+form {
+	display: inline-block;
+	width: 100%;}
+legend {
+	font-size: 8vw;
+	font-weight: bold;}
+.warning{
+	color: #cf000f;
+	border: 5px solid #cf000f;
+	background-color: #ec644b;}
+.good {
+	color: #1e824c;
+	border: 5px solid #1e824c;
+	background-color: #26c281;}
+ul {
+	list-style: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #5d676c;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.l-site {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+  z-index: 1;
+}
+.l-site:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  display: block;
+  background: #3a4043;
+  z-index: 1;
+}
+
+.l-page {
+  position: relative;
+  margin-left: 240px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 1px 0 25px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.l-nav {
+  position: absolute;
+  width: 240px;
+  display: block;
+  background: #3a4043;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  box-shadow: 2px 0px 2px;
+}
+
+#calendar * {
+	font-size: 2vw;
+}
+
+.band h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #fff;
+  font-size: 32px;
+}
+.band p {
+	margin-left: 3%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.band-container {
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.band-inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 3%;
+  width: 100%;
+}
+
+.band-a {
+  background: #69D2E7;
+}
+
+.nav {
+  width: 180px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 30px;
+  overflow: auto;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav li {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  display: block;
+  padding: 10px 0;
+}
+.nav .nav-primary {
+  opacity: 1;
+}
+.nav .nav-primary:hover {
+  opacity: 0.7;
+}
+.nav .nav-secondary {
+  opacity: 0.4;
+}
+.nav .nav-secondary:hover {
+  opacity: 0.7;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 25px;
+  left: 1.5em;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu:hover .menu-hamburger:before,
+.menu:hover .menu-hamburger:after {
+  width: 24px;
+}
+.menu.is-active .menu-hamburger {
+  background: none;
+}
+.menu.is-active .menu-hamburger:before,
+.menu.is-active .menu-hamburger:after {
+  top: 0;
+  width: 24px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.menu.is-active .menu-hamburger:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.menu.is-active .menu-hamburger:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.menu-hamburger {
+  position: relative;
+  width: 24px;
+  height: 4px;
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu-hamburger:before, .menu-hamburger:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  border-radius: 4px;
+  transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.menu-hamburger:before {
+  top: -8px;
+  left: 0;
+  width: 22px;
+}
+.menu-hamburger:after {
+  top: 8px;
+  width: 16px;
+  left: 0;
+}
+
+@media screen and (max-width: 980px) {
+
+  .menu {
+    display: block;
+  }
+
+  .l-site.is-open {
+    overflow: hidden;
+  }
+  .l-site.is-open .l-page {
+    -webkit-transform: translateX(60%);
+    -moz-transform: translateX(60%);
+    -ms-transform: translateX(60%);
+    -o-transform: translateX(60%);
+    transform: translateX(60%);
+  }
+
+	.l-nav {
+		width: 60%;
+	}
+
+	.nav {
+		width: 50%;
+	}
+
+	.nav ul li {
+		font-size: 6vw
+	}
+
+	#title{
+		font-size: 8vw;
+	}
+
+  .l-page {
+    margin-left: 0;
+    z-index: 3;
+  }
+
+  .l-nav {
+    z-index: 2;
+  }
+
+  #calendar * {
+  	font-size: 7vw ;
+  }
+
+  #month-bar {
+  	font-size: 8vw;
+  }
+	
+  #calendar-container {
+  	height: 70%;
+  	padding: 8%;
+  	margin: 1%;
+  	display: flex;
+  	flex-direction: column;
+  }
+
+	.band-inner {
+		flex-direction: column;
+		justify-content: space-around;		
+	}
+	
+	l-div {
+		justify-content: space-between;
+	}
+
+	strong.warning, strong.good {
+		padding: 2%;
+		font-size: 4vw;
+	}
+}
